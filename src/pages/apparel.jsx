@@ -8,7 +8,7 @@ const apparel = () => {
     22, 23, 24, 25, 26, 27, 28, 29, 30,
   ];
   return (
-    <div className="pt-[270px] flex flex-col gap-6 m-auto">
+    <div className="pt-[270px] pb-[140px] flex flex-col gap-6 m-auto">
       <h2 className="text-center text-gray-800 leading-normal sm:leading-normal text-5xl md:leading-normal font-semibold pb-2">
         Creators are the next-gen <br /> travel advisors and operators
       </h2>
