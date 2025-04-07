@@ -4,7 +4,7 @@ const Guide = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row justify-between items-center pt-20 md:pt-16">
-        <div className="md:-z-10 md:w-[45%] px-5 md:px-0 bg-red-300">
+        <div className="md:-z-10 md:w-[45%] px-5 md:px-0">
           <div className=" w-full h-full md:h-[100vh] max-h-[120vh]">
             <video
               controls

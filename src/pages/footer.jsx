@@ -34,7 +34,7 @@ const footer = () => {
             <p className="text-gray-400 text-sm">Term of Use</p>
             <p className="text-gray-400 text-sm">Privacy Policy</p>
           </div>
-          <div className=" pl-16 sm:pl-0 flex flex-col gap-4 ">
+          <div className=" pl-12 sm:pl-0 flex flex-col gap-4 ">
             <p className="text-title font-semibold ">Contact Us</p>
             <p className="text-gray-400 text-sm">Hallgerðargata 13</p>
             <p className="text-gray-400 text-sm">105 Reykjavík Iceland</p>
