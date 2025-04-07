@@ -34,11 +34,11 @@ const apparel = () => {
         and tours created by the world's best travel content creators
       </p>
 
-      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-24 pt-5 justify-center">
+      <div className="flex flex-col md:flex-row sm:items-center gap-8 md:gap-18 pt-5 justify-center px-10 sm:px-0 ">
         <Button />
         <a
           href="https://rexby.typeform.com/to/hK7tfdj9"
-          className=" font-poppins focus:outline-none tracking-wider pointer-events-auto  font-semibold text-[14px] md:text-title underline"
+          className=" font-poppins focus:outline-none tracking-wider pointer-events-auto  font-semibold text-[14px] md:text-[14px] underline"
         >
           <div className="flex flex-1 justify-center truncate">
             Become a travel creator

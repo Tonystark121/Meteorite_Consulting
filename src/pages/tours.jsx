@@ -3,7 +3,7 @@ import React from "react";
 const Tours = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between items-center pt-20 md:pt-48">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-20 md:pt-32">
         <div className=" md:-z-10 md:w-[45%] px-5">
           <div className="w-full h-full max-h-[120vh]">
             <video
@@ -51,7 +51,7 @@ const Tours = () => {
                     a personal setting.
                   </p>
                 </div>
-                <div className="mt-10 flex flex-row justify-start gap-14">
+                <div className="mt-10 flex flex-col sm:flex-row justify-start gap-4 sm:gap-14">
                   <span className="text-content font-semibold flex items-center text-base xl:text-xl   space-x-3 animate-textPopup gap-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

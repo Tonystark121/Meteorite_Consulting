@@ -3,12 +3,12 @@ import React from "react";
 const consultation = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between items-center pt-24 md:pt-48 space-y-0">
-        <div className="pt-8 md:pt-48 md:pl-24 flex flex-col flex-1 order-2">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-24 md:pt-20 space-y-0">
+        <div className="pt-8 md:pt-32 md:pl-16 flex flex-col flex-1 order-2 md:order-1">
           <h2 className="text-[50px] lg:text-[100px] font-extrabold text-[#edf4f7] leading-[1.1] tracking-tight ">
             Consultation
           </h2>
-          <div className=" font-semibold text-4xl tracking-tight flex flex-col pl-10 md:pl-20">
+          <div className=" font-semibold text-4xl tracking-tight flex flex-col pl-10 md:pl-8">
             <div className="w-full mx-auto">
               <div className="text-2xl md:text-4xl">
                 <h2 className="mb-4 leading-snug">
@@ -27,7 +27,7 @@ const consultation = () => {
                     are here to assist you every step of the way.
                   </p>
                 </div>
-                <div className="mt-10 flex flex-row justify-start gap-14">
+                <div className="mt-10 flex flex-col sm:flex-row justify-start  sm:gap-14 gap-4">
                   <span className="text-content font-semibold flex items-center text-base xl:text-xl   space-x-3 animate-textPopup gap-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const consultation = () => {
           </div>
         </div>
 
-        <div className=" md:-z-10 md:w-[45%] px-5 order-1">
+        <div className=" md:-z-10 md:w-[45%] px-5 order-1 md:order-2">
           <div className="w-full h-full max-h-[120vh]">
             <video
               controls
@@ -107,7 +107,7 @@ const consultation = () => {
               loop
               playsInline
               disablePictureInPicture
-              className="w-full h-full object-contain pointer-events-none scale:110 md:scale-120"
+              className="w-full h-full object-contain pointer-events-none scale:110 md:scale-140"
               style={{ visibility: "visible" }}
             >
               <source
