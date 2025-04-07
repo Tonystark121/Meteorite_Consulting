@@ -3,9 +3,9 @@ import React from "react";
 const Guide = () => {
   return (
     <>
-      <div className="flex flex-row justify-between items-center pt-48 space-y-0">
-        <div className=" -z-10 w-[45%] px-5">
-          <div className="w-full h-full max-h-[120vh]">
+      <div className="flex flex-col md:flex-row justify-between items-center pt-20 md:pt-48 space-y-0 ">
+        <div className="md:-z-10 md:w-[45%] px-5">
+          <div className=" w-full h-full max-h-[120vh]">
             <video
               controls
               poster="/poster-guide.webp"
@@ -14,7 +14,7 @@ const Guide = () => {
               loop
               playsInline
               disablePictureInPicture
-              className="w-full h-full object-contain pointer-events-none scale-120"
+              className="w-full h-full object-contain pointer-events-none scale:110 md:scale-120"
               style={{ visibility: "visible" }}
             >
               <source
@@ -28,19 +28,19 @@ const Guide = () => {
             </video>
           </div>
         </div>
-        <div className="pt-48 flex flex-col flex-1">
-          <h2 className="text-[80px] lg:text-[100px] font-extrabold text-[#edf4f7] leading-[1.1] tracking-tight">
+        <div className=" pt-32 md:pt-48 flex flex-col flex-1">
+          <h2 className="text-[50px] lg:text-[100px] font-extrabold text-[#edf4f7] leading-[1.1] tracking-tight">
             Travel Guides
           </h2>
           <div className="font-semibold text-4xl tracking-tight flex flex-col items-center w-full">
-            <div className="w-[78%] mx-auto">
-              <div className=" text-4xl">
+            <div className=" w-[90%] md:w-[78%] mx-auto">
+              <div className=" text-2xl md:text-4xl">
                 <h2 className="mb-4 leading-snug">
                   Unlock insider secrets from local creators
                 </h2>
               </div>
               <div className="flex justify-end mt-6 flex-col gap-8">
-                <div className="mt-2 text-gray-400 font-light leading-relaxed space-y-12 text-xl animate-textPopup">
+                <div className="mt-2 text-gray-400 font-light leading-relaxed  lg:space-y-12  text-[16px] md:text-xl animate-textPopup">
                   <p className="py-6">
                     Get access to a curated list of all the best sightseeing
                     spots, tours, accommodation, car rentals and more recs that

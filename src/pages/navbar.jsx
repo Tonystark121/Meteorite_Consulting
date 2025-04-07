@@ -10,7 +10,7 @@ const navbar = () => {
   };
   return (
     <>
-      <nav className="flex items-center justify-center w-full h-[70px] ">
+      <nav className="flex items-center justify-center w-full md:h-[70px] ">
         <div className="hidden md:flex items-center justify-between w-[95%] ">
           <div className="flex items-center gap-2 text-teal-600 ">
             <svg
@@ -87,7 +87,7 @@ const navbar = () => {
           </div>
         )}
 
-        <div className="flex items-center justify-between bg-white border-1 border-gray-200 fixed bottom-0 w-full flex-row gap-6 md:hidden px-10 py-3">
+        <div className="flex items-center justify-between bg-white border-1 border-gray-200 fixed bottom-0 max-w-full w-full flex-row gap-6 px-10 py-2 md:hidden">
           <div className="flex flex-col items-center gap-0.5 cursor-pointer">
             <svg viewBox="0 0 32 32" width="20" height="20" className="my-icon">
               <circle cx="16" cy="16" r="16" fill="white" />

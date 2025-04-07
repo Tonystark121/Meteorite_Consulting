@@ -3,9 +3,9 @@ import backed from "../../public/backed.png";
 
 const footer = () => {
   return (
-    <div className=" bg-[#F9F9F9] flex items-center justify-center w-full py-36 px-24 mt-48">
-      <div className="flex flex-row justify-between w-full">
-        <div className="flex flex-col justify-start gap-6">
+    <div className=" bg-[#F9F9F9] flex flex-row items-center justify-center w-full px-4 py-16 md:py-36 md:px-24 mt-48">
+      <div className="flex flex-col md:flex-row justify-between w-full">
+        <div className="flex flex-col justify-start gap-8 md:gap-6">
           <svg
             width="130.51080550098231"
             height="35"
@@ -42,13 +42,13 @@ const footer = () => {
             ></path>
           </svg>
 
-          <p className="text-gray-400 my-8 leading-relaxed text-sm w-96">
+          <p className="text-gray-400 my-8 leading-relaxed text-sm w-full md:w-96">
             Rexby was founded in 2021 with the mission of enabling travel
             content creators to provide a better service and capture more of the
             immense value they are creating for the tourism industry
           </p>
 
-          <div className="text-gray-400 text-xl flex flex-row gap-4 tracking-wide pt-4">
+          <div className="text-gray-400 text-xl flex flex-row gap-8 md:gap-4 tracking-wide pt-4">
             <p>Backed by</p>
             <img
               src={backed}
@@ -62,7 +62,7 @@ const footer = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-24">
+        <div className=" pt-16 md:pt-0 flex flex-row gap-24">
           <div className=" flex flex-col gap-4 ">
             <p className="text-title font-semibold ">Rexby</p>
             <p className="text-gray-400 text-sm">About Us</p>
