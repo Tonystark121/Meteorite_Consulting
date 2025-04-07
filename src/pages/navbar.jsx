@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import { PiGlobeThin } from "react-icons/pi";
 import { VscMenu } from "react-icons/vsc";
 import { RxCross1 } from "react-icons/rx";
@@ -6,9 +6,35 @@ import navbarImage from '../../public/navbar.png'
 
 const navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null)
+  const buttonRef = useRef(null)
+
   const handleShowMenu = () => {
     setShowMenu((prev) => !prev);
   };
+
+ 
+    const handleClickOutside = (event) => {
+
+      console.log(event.target)
+      if (
+        menuRef.current && !menuRef.current.contains(event.target) && 
+        buttonRef.current && !buttonRef.current.contains(event.target)
+      ) {
+        setShowMenu(false);
+      }
+    };
+  
+    useEffect(() => {
+      document.addEventListener('click', handleClickOutside);
+
+      console.log('I am in useEEg')
+  
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, []);
+
   return (
     <>
       <nav className="flex items-center justify-center w-full md:h-[70px] ">
@@ -25,6 +51,7 @@ const navbar = () => {
               <VscMenu
                 className="text-gray-600 text-xl cursor-pointer "
                 onClick={handleShowMenu}
+                ref={buttonRef}
               />
             ) : (
               <RxCross1
@@ -35,11 +62,12 @@ const navbar = () => {
           </div>
         </div>
         {showMenu && (
-          <div className="absolute flex flex-col gap-4 top-18 border-1 border-gray-200 right-8 w-74 rounded-2xl bg-white shadow-xl px-8 py-6 z-50">
+          <div className="absolute flex flex-col gap-4 top-18 border-1 border-gray-200 right-8 w-80 rounded-2xl bg-white shadow-xl px-8 py-6 z-50"
+          ref={menuRef}>
             <h3 className="text-md font-semibold text-gray-400 uppercase tracking-wider mb-4">
               REXBY
             </h3>
-            <ul className=" text-gray-800 font-semibold space-y-14 ">
+            <ul className=" font-semibold flex flex-col gap-5 text-gray-500 text-[14px] ">
               <li>About Us</li>
               <li>Start exploring</li>
               <li>Become a travel creator</li>
